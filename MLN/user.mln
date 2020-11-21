@@ -1,0 +1,101 @@
+// MLN for user hotel recommendation
+kindOptions = {Guesthouse, Hotel}
+areaOptions = {East, West, South, North, Centre}
+starOptions = {0,2,3,4}
+parkingOptions = {Hasparking, Noparking}
+priceRangeOptions = {Cheap, Moderate, Expensive}
+
+area = {East, West, South, North, Centre}
+time = {1,...,24}
+day = {1,...,7}
+
+// Evidence
+area_now(person, area!)
+time_now(person, time!)
+day_now(person, day!)
+
+
+// Query
+Area(person, area!)
+Star(person, starOptions!)
+Park(person, parkingOptions!)
+PriceRange(person, priceRangeOptions!)
+Kind(person, kindOptions!)
+
+// Rules
+
+// specific time (traffic jam), days (weekends) and current position
+// affects the location of hotels
+
+// when it's traffic time or holidays, recommend people to stay where they are
+// (time_now(p, +t) v day_now(p, +d)) ^ area_now(p, +a) => Area(p, +a)
+
+// when it's traffic time or holidays, recommend people not to drive
+// time_now(p, +t) v day_now(p, +d) => Park(p, +pk)
+
+// when it's holidays or expensive, recommend people to stay in 4 stars/hotels
+// day_now(p, +d) v PriceRange(p, +pr) => Kind(p, +k)
+// day_now(p, +d) v PriceRange(p, +pr) => Star(p, +s)
+
+// when it's holidays or busy time, recommend people expensive option.
+// time_now(p, +t) v day_now(p, +d) => PriceRange(p, +pr)
+
+// Hard code the rules
+// Area: 8/9/11/12/18/19 or holidays 6/7 --> stay where the person is
+
+(time_now(p, 8) v day_now(p, 6)) ^ area_now(p, +a) ^ Area(p, +a)
+(time_now(p, 8) v day_now(p, 7)) ^ area_now(p, +a) ^ Area(p, +a)
+(time_now(p, 9) v day_now(p, 6)) ^ area_now(p, +a) ^ Area(p, +a)
+(time_now(p, 9) v day_now(p, 7)) ^ area_now(p, +a) ^ Area(p, +a)
+
+(time_now(p, 11) v day_now(p, 6)) ^ area_now(p, +a) ^ Area(p, +a)
+(time_now(p, 11) v day_now(p, 7)) ^ area_now(p, +a) ^ Area(p, +a)
+(time_now(p, 12) v day_now(p, 6)) ^ area_now(p, +a) ^ Area(p, +a)
+(time_now(p, 12) v day_now(p, 7)) ^ area_now(p, +a) ^ Area(p, +a)
+
+(time_now(p, 18) v day_now(p, 6)) ^ area_now(p, +a) ^ Area(p, +a)
+(time_now(p, 18) v day_now(p, 7)) ^ area_now(p, +a) ^ Area(p, +a)
+(time_now(p, 19) v day_now(p, 6)) ^ area_now(p, +a) ^ Area(p, +a)
+(time_now(p, 19) v day_now(p, 7)) ^ area_now(p, +a) ^ Area(p, +a)
+
+// Park: traffic time or holidays --> Noparking
+
+time_now(p, 8) v day_now(p, 6) ^ Park(p, +pk)
+time_now(p, 8) v day_now(p, 7) ^ Park(p, +pk)
+time_now(p, 9) v day_now(p, 6) ^ Park(p, +pk)
+time_now(p, 9) v day_now(p, 7) ^ Park(p, +pk)
+
+time_now(p, 11) v day_now(p, 6) ^ Park(p, +pk)
+time_now(p, 11) v day_now(p, 7) ^ Park(p, +pk)
+time_now(p, 12) v day_now(p, 6) ^ Park(p, +pk)
+time_now(p, 12) v day_now(p, 7) ^ Park(p, +pk)
+
+time_now(p, 18) v day_now(p, 6) ^ Park(p, +pk)
+time_now(p, 18) v day_now(p, 7) ^ Park(p, +pk)
+time_now(p, 19) v day_now(p, 6) ^ Park(p, +pk)
+time_now(p, 19) v day_now(p, 7) ^ Park(p, +pk)
+
+// Kind and Star: holidays and required expensive --> 4 star hotels
+
+day_now(p, 6) v PriceRange(p, +pr) ^ Kind(p, +k)
+day_now(p, 7) v PriceRange(p, +pr) ^ Kind(p, +k)
+
+day_now(p, 6) v PriceRange(p, +pr) ^ Star(p, +s)
+day_now(p, 7) v PriceRange(p, +pr) ^ Star(p, +s)
+
+// Price Range: traffic time or holidays --> Expensive
+
+time_now(p, 8) v day_now(p, 6) ^ PriceRange(p, +pr)
+time_now(p, 8) v day_now(p, 7) ^ PriceRange(p, +pr)
+time_now(p, 9) v day_now(p, 6) ^ PriceRange(p, +pr)
+time_now(p, 9) v day_now(p, 7) ^ PriceRange(p, +pr)
+
+time_now(p, 11) v day_now(p, 6) ^ PriceRange(p, +pr)
+time_now(p, 11) v day_now(p, 7) ^ PriceRange(p, +pr)
+time_now(p, 12) v day_now(p, 6) ^ PriceRange(p, +pr)
+time_now(p, 12) v day_now(p, 7) ^ PriceRange(p, +pr)
+
+time_now(p, 18) v day_now(p, 6) ^ PriceRange(p, +pr)
+time_now(p, 18) v day_now(p, 7) ^ PriceRange(p, +pr)
+time_now(p, 19) v day_now(p, 6) ^ PriceRange(p, +pr)
+time_now(p, 19) v day_now(p, 7) ^ PriceRange(p, +pr)

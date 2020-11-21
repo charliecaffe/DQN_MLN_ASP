@@ -1,0 +1,54 @@
+==================================================================
+  Dialog policy learning by reasoning with contextural knowledge
+==================================================================
+
+This framework uses PyDial as the dialog platform. 
+PyDial uses Python 2.7 and has not been tested with other versions. Ensure 
+that you use the requirements.txt file to install the appropriate dependencies
+via pip. If you do not have pip installed yet first do.
+
+The ASP and MLN components are in folders ASP and MLN, respectively.
+In MLN component, there are three databases containing 250, 500, 1000 user goals 
+respectively for training the rule weights.
+
+Clingo and plotting use Python 3.7, and to plot the result, you need to install 
+the dependencies with "plot_requirements.txt"
+
+1. Set up Conda evironments 
+  Firstly, we need to set up conda environment by running following command:
+
+    > conda create --name pydial --file requirements.txt
+
+  Since we use python 3.7 for clingo and plotting, you need to set up another environment:
+
+    > conda create --name py37 --file plot_requirements.txt
+
+  More information to run experiments on Pydial is available here:
+    https://pydial.cs.hhu.de/Docs/
+
+2. Training
+  The training on PyDial is in pydial environment, so it needs to be activated:
+    
+    > conda activate pydial
+
+  Train a dialog policy with standard DQN by the following command:
+
+    > nohup python2 pydial.py train config/pydial_benchmarks/env7-dqn-CH.cfg &
+
+  Train a dialog policy with DQN and MLN-based internal knowledge by the following command:
+
+    > nohup python2 pydial.py train config/pydial_benchmarks/env7-dqn-CH-MLN.cfg &
+
+  Train a dialog policy with DQN, MLN-based internal knowledge, and ASP-based external knowledge by the following command:
+
+    > nohup python2 pydial.py train config/pydial_benchmarks/env7-dqn-CH-ASP.cfg &
+
+  Results of above three training algorithms will be stored in ./output, ./output-mln, and ./output-asp, respectively.
+
+3. Plot the result
+  Run the following commands to plot the experimental result:
+
+    > conda activate py37
+    > python plot.py
+
+  The figures will be saved under directory ./_plots

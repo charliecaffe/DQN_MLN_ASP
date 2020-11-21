@@ -1,0 +1,1113 @@
+*** logfile: env7-dqn-CH-seed7051994-00.1-40.train.log ***
+RESULTS:: 16:06:59: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.0->env7-dqn-CH-00.1: iter=0, error-rate=0, num-dialogs=100 ***
+RESULTS:: 16:06:59: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.0->env7-dqn-CH-00.1: iter=0, error-rate=0, num-dialogs=100 ***
+2020-11-18 16:07:01.042859: I tensorflow/core/platform/cpu_feature_guard.cc:145] This TensorFlow binary is optimized with Intel(R) MKL-DNN to use the following CPU instructions in performance critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in non-MKL-DNN operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-11-18 16:07:01.072755: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2300020000 Hz
+2020-11-18 16:07:01.078502: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55a99f755f50 executing computations on platform Host. Devices:
+2020-11-18 16:07:01.078565: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+OMP: Info #212: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #210: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 0-71
+OMP: Info #156: KMP_AFFINITY: 72 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #179: KMP_AFFINITY: 2 packages x 18 cores/pkg x 2 threads/core (36 total cores)
+OMP: Info #214: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 0 maps to package 0 core 0 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 36 maps to package 0 core 0 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 1 maps to package 0 core 1 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 37 maps to package 0 core 1 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 2 maps to package 0 core 2 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 38 maps to package 0 core 2 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 3 maps to package 0 core 3 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 39 maps to package 0 core 3 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 4 maps to package 0 core 4 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 40 maps to package 0 core 4 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 5 maps to package 0 core 8 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 41 maps to package 0 core 8 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 6 maps to package 0 core 9 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 42 maps to package 0 core 9 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 7 maps to package 0 core 10 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 43 maps to package 0 core 10 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 8 maps to package 0 core 11 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 44 maps to package 0 core 11 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 9 maps to package 0 core 16 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 45 maps to package 0 core 16 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 10 maps to package 0 core 17 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 46 maps to package 0 core 17 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 11 maps to package 0 core 18 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 47 maps to package 0 core 18 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 12 maps to package 0 core 19 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 48 maps to package 0 core 19 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 13 maps to package 0 core 20 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 49 maps to package 0 core 20 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 14 maps to package 0 core 24 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 50 maps to package 0 core 24 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 15 maps to package 0 core 25 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 51 maps to package 0 core 25 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 16 maps to package 0 core 26 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 52 maps to package 0 core 26 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 17 maps to package 0 core 27 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 53 maps to package 0 core 27 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 18 maps to package 1 core 0 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 54 maps to package 1 core 0 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 19 maps to package 1 core 1 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 55 maps to package 1 core 1 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 20 maps to package 1 core 2 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 56 maps to package 1 core 2 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 21 maps to package 1 core 3 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 57 maps to package 1 core 3 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 22 maps to package 1 core 4 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 58 maps to package 1 core 4 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 23 maps to package 1 core 8 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 59 maps to package 1 core 8 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 24 maps to package 1 core 9 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 60 maps to package 1 core 9 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 25 maps to package 1 core 10 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 61 maps to package 1 core 10 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 26 maps to package 1 core 11 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 62 maps to package 1 core 11 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 27 maps to package 1 core 16 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 63 maps to package 1 core 16 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 28 maps to package 1 core 17 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 64 maps to package 1 core 17 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 29 maps to package 1 core 18 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 65 maps to package 1 core 18 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 30 maps to package 1 core 19 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 66 maps to package 1 core 19 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 31 maps to package 1 core 20 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 67 maps to package 1 core 20 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 32 maps to package 1 core 24 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 68 maps to package 1 core 24 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 33 maps to package 1 core 25 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 69 maps to package 1 core 25 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 34 maps to package 1 core 26 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 70 maps to package 1 core 26 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 35 maps to package 1 core 27 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 71 maps to package 1 core 27 thread 1 
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078306 thread 0 bound to OS proc set 0
+2020-11-18 16:07:01.084515: I tensorflow/core/common_runtime/process_util.cc:115] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2020-11-18 16:07:01.458875: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078468 thread 1 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078472 thread 2 bound to OS proc set 2
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078473 thread 3 bound to OS proc set 3
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078474 thread 4 bound to OS proc set 4
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078475 thread 5 bound to OS proc set 5
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078476 thread 6 bound to OS proc set 6
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078477 thread 7 bound to OS proc set 7
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078478 thread 8 bound to OS proc set 8
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078479 thread 9 bound to OS proc set 9
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078480 thread 10 bound to OS proc set 10
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078481 thread 11 bound to OS proc set 11
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078482 thread 12 bound to OS proc set 12
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078483 thread 13 bound to OS proc set 13
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078484 thread 14 bound to OS proc set 14
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078485 thread 15 bound to OS proc set 15
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078486 thread 16 bound to OS proc set 16
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078487 thread 17 bound to OS proc set 17
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078488 thread 18 bound to OS proc set 18
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078490 thread 20 bound to OS proc set 20
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078491 thread 21 bound to OS proc set 21
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078492 thread 22 bound to OS proc set 22
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078493 thread 23 bound to OS proc set 23
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078494 thread 24 bound to OS proc set 24
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078495 thread 25 bound to OS proc set 25
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078496 thread 26 bound to OS proc set 26
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078497 thread 27 bound to OS proc set 27
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078498 thread 28 bound to OS proc set 28
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078499 thread 29 bound to OS proc set 29
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078500 thread 30 bound to OS proc set 30
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078501 thread 31 bound to OS proc set 31
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078489 thread 19 bound to OS proc set 19
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078503 thread 33 bound to OS proc set 33
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078504 thread 34 bound to OS proc set 34
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078505 thread 35 bound to OS proc set 35
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078506 thread 36 bound to OS proc set 36
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078507 thread 37 bound to OS proc set 37
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078502 thread 32 bound to OS proc set 32
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078508 thread 38 bound to OS proc set 38
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078509 thread 39 bound to OS proc set 39
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078510 thread 40 bound to OS proc set 40
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078511 thread 41 bound to OS proc set 41
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078512 thread 42 bound to OS proc set 42
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078514 thread 44 bound to OS proc set 44
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078513 thread 43 bound to OS proc set 43
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078515 thread 45 bound to OS proc set 45
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078516 thread 46 bound to OS proc set 46
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078517 thread 47 bound to OS proc set 47
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078518 thread 48 bound to OS proc set 48
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078520 thread 50 bound to OS proc set 50
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078519 thread 49 bound to OS proc set 49
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078521 thread 51 bound to OS proc set 51
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078522 thread 52 bound to OS proc set 52
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078523 thread 53 bound to OS proc set 53
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078524 thread 54 bound to OS proc set 54
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078526 thread 56 bound to OS proc set 56
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078527 thread 57 bound to OS proc set 57
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078525 thread 55 bound to OS proc set 55
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078529 thread 59 bound to OS proc set 59
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078530 thread 60 bound to OS proc set 60
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078531 thread 61 bound to OS proc set 61
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078532 thread 62 bound to OS proc set 62
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078533 thread 63 bound to OS proc set 63
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078534 thread 64 bound to OS proc set 64
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078535 thread 65 bound to OS proc set 65
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078536 thread 66 bound to OS proc set 66
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078537 thread 67 bound to OS proc set 67
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078538 thread 68 bound to OS proc set 68
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078539 thread 69 bound to OS proc set 69
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078540 thread 70 bound to OS proc set 70
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078541 thread 71 bound to OS proc set 71
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078542 thread 72 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078528 thread 58 bound to OS proc set 58
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078467 thread 73 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078543 thread 74 bound to OS proc set 2
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078544 thread 75 bound to OS proc set 3
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078545 thread 76 bound to OS proc set 4
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078546 thread 77 bound to OS proc set 5
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078547 thread 78 bound to OS proc set 6
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078548 thread 79 bound to OS proc set 7
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078549 thread 80 bound to OS proc set 8
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078550 thread 81 bound to OS proc set 9
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078551 thread 82 bound to OS proc set 10
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078552 thread 83 bound to OS proc set 11
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078553 thread 84 bound to OS proc set 12
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078554 thread 85 bound to OS proc set 13
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078555 thread 86 bound to OS proc set 14
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078556 thread 87 bound to OS proc set 15
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078557 thread 88 bound to OS proc set 16
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078559 thread 90 bound to OS proc set 18
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078558 thread 89 bound to OS proc set 17
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078560 thread 91 bound to OS proc set 19
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078561 thread 92 bound to OS proc set 20
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078562 thread 93 bound to OS proc set 21
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078563 thread 94 bound to OS proc set 22
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078565 thread 96 bound to OS proc set 24
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078564 thread 95 bound to OS proc set 23
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078566 thread 97 bound to OS proc set 25
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078567 thread 98 bound to OS proc set 26
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078568 thread 99 bound to OS proc set 27
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078569 thread 100 bound to OS proc set 28
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078570 thread 101 bound to OS proc set 29
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078571 thread 102 bound to OS proc set 30
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078572 thread 103 bound to OS proc set 31
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078573 thread 104 bound to OS proc set 32
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078574 thread 105 bound to OS proc set 33
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078575 thread 106 bound to OS proc set 34
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078576 thread 107 bound to OS proc set 35
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078577 thread 108 bound to OS proc set 36
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078578 thread 109 bound to OS proc set 37
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078579 thread 110 bound to OS proc set 38
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078580 thread 111 bound to OS proc set 39
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078581 thread 112 bound to OS proc set 40
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078582 thread 113 bound to OS proc set 41
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078584 thread 115 bound to OS proc set 43
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078583 thread 114 bound to OS proc set 42
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078585 thread 116 bound to OS proc set 44
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078586 thread 117 bound to OS proc set 45
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078587 thread 118 bound to OS proc set 46
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078588 thread 119 bound to OS proc set 47
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078589 thread 120 bound to OS proc set 48
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078590 thread 121 bound to OS proc set 49
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078591 thread 122 bound to OS proc set 50
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078593 thread 124 bound to OS proc set 52
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078592 thread 123 bound to OS proc set 51
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078594 thread 125 bound to OS proc set 53
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078595 thread 126 bound to OS proc set 54
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078596 thread 127 bound to OS proc set 55
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078597 thread 128 bound to OS proc set 56
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078598 thread 129 bound to OS proc set 57
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078600 thread 131 bound to OS proc set 59
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078599 thread 130 bound to OS proc set 58
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078601 thread 132 bound to OS proc set 60
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078602 thread 133 bound to OS proc set 61
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078603 thread 134 bound to OS proc set 62
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078604 thread 135 bound to OS proc set 63
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078605 thread 136 bound to OS proc set 64
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078606 thread 137 bound to OS proc set 65
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078607 thread 138 bound to OS proc set 66
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078609 thread 140 bound to OS proc set 68
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078608 thread 139 bound to OS proc set 67
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078610 thread 141 bound to OS proc set 69
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078611 thread 142 bound to OS proc set 70
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078612 thread 143 bound to OS proc set 71
+OMP: Info #250: KMP_AFFINITY: pid 1078306 tid 1078613 thread 144 bound to OS proc set 0
+nothing loaded in first iteration
+load from:  _benchmarkpolicies/env7-dqn-CH-00.0
+loaded replay size:  0
+Saving deepq-network...
+RESULTS:: 16:07:31: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 16:07:31: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 16:07:31: root                               EvaluationManager.py <_prstr>207 :  Average reward  = -2.97 +- 1.45
+RESULTS:: 16:07:31: root                               EvaluationManager.py <_prstr>207 :  Average success = 1.00 +- 1.97
+RESULTS:: 16:07:31: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 5.17 +- 1.02
+*** Evaluating env7-dqn-CH-00.1: error-rate=0 num-dialogs=100 ***
+RESULTS:: 16:07:31: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.1: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.1.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.1
+loaded replay size:  417
+RESULTS:: 16:07:57: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 16:07:57: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 16:07:57: root                               EvaluationManager.py <_prstr>207 :  Average reward  = -3.74 +- 1.11
+RESULTS:: 16:07:57: root                               EvaluationManager.py <_prstr>207 :  Average success = 1.00 +- 1.97
+RESULTS:: 16:07:57: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 4.14 +- 0.94
+RESULTS:: 16:07:57: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.1->env7-dqn-CH-00.2: iter=1, error-rate=0, num-dialogs=100 ***
+RESULTS:: 16:07:57: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.1->env7-dqn-CH-00.2: iter=1, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.1.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.1
+loaded replay size:  417
+Saving deepq-network...
+RESULTS:: 16:08:40: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 16:08:40: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 16:08:40: root                               EvaluationManager.py <_prstr>207 :  Average reward  = -3.16 +- 1.96
+RESULTS:: 16:08:40: root                               EvaluationManager.py <_prstr>207 :  Average success = 5.00 +- 4.32
+RESULTS:: 16:08:40: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 6.76 +- 1.21
+*** Evaluating env7-dqn-CH-00.2: error-rate=0 num-dialogs=100 ***
+RESULTS:: 16:08:40: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.2: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.2.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.2
+loaded replay size:  993
+RESULTS:: 16:08:54: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 16:08:54: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 16:08:54: root                               EvaluationManager.py <_prstr>207 :  Average reward  = -0.29 +- 0.80
+RESULTS:: 16:08:54: root                               EvaluationManager.py <_prstr>207 :  Average success = 2.00 +- 2.78
+RESULTS:: 16:08:54: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 1.29 +- 0.21
+RESULTS:: 16:08:54: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.2->env7-dqn-CH-00.3: iter=2, error-rate=0, num-dialogs=100 ***
+RESULTS:: 16:08:54: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.2->env7-dqn-CH-00.3: iter=2, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.2.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.2
+loaded replay size:  993
+Saving deepq-network...
+RESULTS:: 16:09:16: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 16:09:16: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 16:09:16: root                               EvaluationManager.py <_prstr>207 :  Average reward  = -1.22 +- 0.84
+RESULTS:: 16:09:16: root                               EvaluationManager.py <_prstr>207 :  Average success = 2.00 +- 2.78
+RESULTS:: 16:09:16: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 2.02 +- 0.48
+*** Evaluating env7-dqn-CH-00.3: error-rate=0 num-dialogs=100 ***
+RESULTS:: 16:09:16: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.3: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.3.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.3
+loaded replay size:  1095
+RESULTS:: 16:09:29: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 16:09:29: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 16:09:29: root                               EvaluationManager.py <_prstr>207 :  Average reward  = -0.81 +- 0.57
+RESULTS:: 16:09:29: root                               EvaluationManager.py <_prstr>207 :  Average success = 1.00 +- 1.97
+RESULTS:: 16:09:29: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 1.21 +- 0.20
+RESULTS:: 16:09:29: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.3->env7-dqn-CH-00.4: iter=3, error-rate=0, num-dialogs=100 ***
+RESULTS:: 16:09:29: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.3->env7-dqn-CH-00.4: iter=3, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.3.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.3
+loaded replay size:  1095
+Saving deepq-network...
+RESULTS:: 16:09:54: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 16:09:54: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 16:09:54: root                               EvaluationManager.py <_prstr>207 :  Average reward  = -1.60 +- 0.92
+RESULTS:: 16:09:54: root                               EvaluationManager.py <_prstr>207 :  Average success = 1.00 +- 1.97
+RESULTS:: 16:09:54: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 2.60 +- 0.59
+*** Evaluating env7-dqn-CH-00.4: error-rate=0 num-dialogs=100 ***
+RESULTS:: 16:09:54: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.4: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.4.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.4
+loaded replay size:  1255
+RESULTS:: 16:10:07: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 16:10:07: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 16:10:07: root                               EvaluationManager.py <_prstr>207 :  Average reward  = -1.15 +- 0.21
+RESULTS:: 16:10:07: root                               EvaluationManager.py <_prstr>207 :  Average success = 0.00 +- 0.00
+RESULTS:: 16:10:07: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 1.15 +- 0.21
+RESULTS:: 16:10:07: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.4->env7-dqn-CH-00.5: iter=4, error-rate=0, num-dialogs=100 ***
+RESULTS:: 16:10:07: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.4->env7-dqn-CH-00.5: iter=4, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.4.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.4
+loaded replay size:  1255
+Saving deepq-network...
+RESULTS:: 16:10:56: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 16:10:56: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 16:10:56: root                               EvaluationManager.py <_prstr>207 :  Average reward  = -3.43 +- 2.00
+RESULTS:: 16:10:56: root                               EvaluationManager.py <_prstr>207 :  Average success = 7.00 +- 5.06
+RESULTS:: 16:10:56: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 7.63 +- 1.19
+*** Evaluating env7-dqn-CH-00.5: error-rate=0 num-dialogs=100 ***
+RESULTS:: 16:10:56: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.5: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.5.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.5
+loaded replay size:  1918
+RESULTS:: 16:16:53: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 16:16:53: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 16:16:53: root                               EvaluationManager.py <_prstr>207 :  Average reward  = -5.58 +- 2.67
+RESULTS:: 16:16:53: root                               EvaluationManager.py <_prstr>207 :  Average success = 14.00 +- 6.88
+RESULTS:: 16:16:53: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 11.78 +- 1.37
+RESULTS:: 16:16:53: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.5->env7-dqn-CH-00.6: iter=5, error-rate=0, num-dialogs=100 ***
+RESULTS:: 16:16:53: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.5->env7-dqn-CH-00.6: iter=5, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.5.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.5
+loaded replay size:  1918
+Saving deepq-network...
+RESULTS:: 16:26:13: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 16:26:13: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 16:26:13: root                               EvaluationManager.py <_prstr>207 :  Average reward  = -1.06 +- 2.35
+RESULTS:: 16:26:13: root                               EvaluationManager.py <_prstr>207 :  Average success = 14.00 +- 6.88
+RESULTS:: 16:26:13: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 10.66 +- 1.13
+*** Evaluating env7-dqn-CH-00.6: error-rate=0 num-dialogs=100 ***
+RESULTS:: 16:26:13: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.6: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.6.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.6
+loaded replay size:  2884
+RESULTS:: 16:35:19: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 16:35:19: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 16:35:19: root                               EvaluationManager.py <_prstr>207 :  Average reward  = -9.14 +- 1.53
+RESULTS:: 16:35:19: root                               EvaluationManager.py <_prstr>207 :  Average success = 1.00 +- 1.97
+RESULTS:: 16:35:19: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 11.14 +- 0.86
+RESULTS:: 16:35:19: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.6->env7-dqn-CH-00.7: iter=6, error-rate=0, num-dialogs=100 ***
+RESULTS:: 16:35:19: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.6->env7-dqn-CH-00.7: iter=6, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.6.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.6
+loaded replay size:  2884
+Saving deepq-network...
+RESULTS:: 16:44:23: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 16:44:23: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 16:44:23: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 1.35 +- 2.43
+RESULTS:: 16:44:23: root                               EvaluationManager.py <_prstr>207 :  Average success = 16.00 +- 7.27
+RESULTS:: 16:44:23: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 10.45 +- 1.06
+*** Evaluating env7-dqn-CH-00.7: error-rate=0 num-dialogs=100 ***
+RESULTS:: 16:44:23: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.7: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.7.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.7
+loaded replay size:  3829
+RESULTS:: 16:51:40: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 16:51:40: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 16:51:40: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 3.13 +- 2.39
+RESULTS:: 16:51:40: root                               EvaluationManager.py <_prstr>207 :  Average success = 14.00 +- 6.88
+RESULTS:: 16:51:40: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.67 +- 0.90
+RESULTS:: 16:51:40: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.7->env7-dqn-CH-00.8: iter=7, error-rate=0, num-dialogs=100 ***
+RESULTS:: 16:51:40: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.7->env7-dqn-CH-00.8: iter=7, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.7.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.7
+loaded replay size:  3829
+Saving deepq-network...
+RESULTS:: 17:00:58: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 17:00:58: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 17:00:58: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 0.61 +- 2.49
+RESULTS:: 17:00:58: root                               EvaluationManager.py <_prstr>207 :  Average success = 8.00 +- 5.38
+RESULTS:: 17:00:58: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 10.39 +- 1.05
+*** Evaluating env7-dqn-CH-00.8: error-rate=0 num-dialogs=100 ***
+RESULTS:: 17:00:58: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.8: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.8.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.8
+loaded replay size:  4768
+RESULTS:: 17:08:42: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 17:08:42: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 17:08:42: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 4.67 +- 2.51
+RESULTS:: 17:08:42: root                               EvaluationManager.py <_prstr>207 :  Average success = 22.00 +- 8.22
+RESULTS:: 17:08:42: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.73 +- 1.05
+RESULTS:: 17:08:42: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.8->env7-dqn-CH-00.9: iter=8, error-rate=0, num-dialogs=100 ***
+RESULTS:: 17:08:42: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.8->env7-dqn-CH-00.9: iter=8, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.8.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.8
+loaded replay size:  4768
+Saving deepq-network...
+RESULTS:: 17:17:13: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 17:17:13: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 17:17:13: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 3.51 +- 2.33
+RESULTS:: 17:17:13: root                               EvaluationManager.py <_prstr>207 :  Average success = 20.00 +- 7.94
+RESULTS:: 17:17:13: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 9.29 +- 1.07
+*** Evaluating env7-dqn-CH-00.9: error-rate=0 num-dialogs=100 ***
+RESULTS:: 17:17:13: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.9: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.9.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.9
+loaded replay size:  5597
+RESULTS:: 17:23:18: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 17:23:18: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 17:23:18: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 4.38 +- 2.29
+RESULTS:: 17:23:18: root                               EvaluationManager.py <_prstr>207 :  Average success = 20.00 +- 7.94
+RESULTS:: 17:23:18: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 6.82 +- 0.60
+RESULTS:: 17:23:18: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.9->env7-dqn-CH-00.10: iter=9, error-rate=0, num-dialogs=100 ***
+RESULTS:: 17:23:18: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.9->env7-dqn-CH-00.10: iter=9, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.9.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.9
+loaded replay size:  5597
+Saving deepq-network...
+RESULTS:: 17:32:48: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 17:32:48: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 17:32:48: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 2.08 +- 2.68
+RESULTS:: 17:32:48: root                               EvaluationManager.py <_prstr>207 :  Average success = 18.00 +- 7.62
+RESULTS:: 17:32:48: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 10.52 +- 1.31
+*** Evaluating env7-dqn-CH-00.10: error-rate=0 num-dialogs=100 ***
+RESULTS:: 17:32:48: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.10: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.10.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.10
+loaded replay size:  6549
+RESULTS:: 17:40:03: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 17:40:03: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 17:40:03: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 6.17 +- 2.34
+RESULTS:: 17:40:03: root                               EvaluationManager.py <_prstr>207 :  Average success = 23.00 +- 8.35
+RESULTS:: 17:40:03: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.23 +- 0.86
+RESULTS:: 17:40:04: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.10->env7-dqn-CH-00.11: iter=10, error-rate=0, num-dialogs=100 ***
+RESULTS:: 17:40:04: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.10->env7-dqn-CH-00.11: iter=10, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.10.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.10
+loaded replay size:  6549
+Saving deepq-network...
+RESULTS:: 17:48:43: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 17:48:43: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 17:48:43: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 1.63 +- 2.48
+RESULTS:: 17:48:43: root                               EvaluationManager.py <_prstr>207 :  Average success = 17.00 +- 7.45
+RESULTS:: 17:48:43: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 9.37 +- 0.98
+*** Evaluating env7-dqn-CH-00.11: error-rate=0 num-dialogs=100 ***
+RESULTS:: 17:48:43: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.11: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.11.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.11
+loaded replay size:  7386
+RESULTS:: 17:55:37: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 17:55:37: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 17:55:37: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 1.63 +- 2.48
+RESULTS:: 17:55:37: root                               EvaluationManager.py <_prstr>207 :  Average success = 10.00 +- 5.95
+RESULTS:: 17:55:37: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.17 +- 0.92
+RESULTS:: 17:55:37: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.11->env7-dqn-CH-00.12: iter=11, error-rate=0, num-dialogs=100 ***
+RESULTS:: 17:55:37: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.11->env7-dqn-CH-00.12: iter=11, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.11.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.11
+loaded replay size:  7386
+Saving deepq-network...
+RESULTS:: 18:04:32: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 18:04:32: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 18:04:32: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 3.21 +- 2.27
+RESULTS:: 18:04:32: root                               EvaluationManager.py <_prstr>207 :  Average success = 20.00 +- 7.94
+RESULTS:: 18:04:32: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 9.59 +- 1.00
+*** Evaluating env7-dqn-CH-00.12: error-rate=0 num-dialogs=100 ***
+RESULTS:: 18:04:32: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.12: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.12.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.12
+loaded replay size:  8245
+RESULTS:: 18:12:10: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 18:12:10: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 18:12:10: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 0.73 +- 2.20
+RESULTS:: 18:12:10: root                               EvaluationManager.py <_prstr>207 :  Average success = 17.00 +- 7.45
+RESULTS:: 18:12:10: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.67 +- 0.71
+RESULTS:: 18:12:10: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.12->env7-dqn-CH-00.13: iter=12, error-rate=0, num-dialogs=100 ***
+RESULTS:: 18:12:10: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.12->env7-dqn-CH-00.13: iter=12, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.12.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.12
+loaded replay size:  8245
+Saving deepq-network...
+RESULTS:: 18:21:22: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 18:21:22: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 18:21:22: root                               EvaluationManager.py <_prstr>207 :  Average reward  = -1.01 +- 2.42
+RESULTS:: 18:21:22: root                               EvaluationManager.py <_prstr>207 :  Average success = 18.00 +- 7.62
+RESULTS:: 18:21:22: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 10.21 +- 0.97
+*** Evaluating env7-dqn-CH-00.13: error-rate=0 num-dialogs=100 ***
+RESULTS:: 18:21:22: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.13: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.13.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.13
+loaded replay size:  9166
+RESULTS:: 18:30:05: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 18:30:05: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 18:30:05: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 3.29 +- 2.48
+RESULTS:: 18:30:05: root                               EvaluationManager.py <_prstr>207 :  Average success = 16.00 +- 7.27
+RESULTS:: 18:30:05: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 9.51 +- 1.07
+RESULTS:: 18:30:05: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.13->env7-dqn-CH-00.14: iter=13, error-rate=0, num-dialogs=100 ***
+RESULTS:: 18:30:05: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.13->env7-dqn-CH-00.14: iter=13, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.13.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.13
+loaded replay size:  9166
+Saving deepq-network...
+RESULTS:: 18:39:40: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 18:39:40: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 18:39:40: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 4.19 +- 2.61
+RESULTS:: 18:39:40: root                               EvaluationManager.py <_prstr>207 :  Average success = 17.00 +- 7.45
+RESULTS:: 18:39:40: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 9.61 +- 1.31
+*** Evaluating env7-dqn-CH-00.14: error-rate=0 num-dialogs=100 ***
+RESULTS:: 18:39:40: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.14: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.14.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.14
+loaded replay size:  10027
+RESULTS:: 18:49:02: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 18:49:02: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 18:49:02: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 5.12 +- 2.60
+RESULTS:: 18:49:02: root                               EvaluationManager.py <_prstr>207 :  Average success = 26.00 +- 8.70
+RESULTS:: 18:49:02: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 10.68 +- 1.44
+RESULTS:: 18:49:02: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.14->env7-dqn-CH-00.15: iter=14, error-rate=0, num-dialogs=100 ***
+RESULTS:: 18:49:02: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.14->env7-dqn-CH-00.15: iter=14, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.14.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.14
+loaded replay size:  10027
+Saving deepq-network...
+RESULTS:: 18:59:38: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 18:59:38: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 18:59:38: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 1.11 +- 2.88
+RESULTS:: 18:59:38: root                               EvaluationManager.py <_prstr>207 :  Average success = 18.00 +- 7.62
+RESULTS:: 18:59:38: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 11.29 +- 1.47
+*** Evaluating env7-dqn-CH-00.15: error-rate=0 num-dialogs=100 ***
+RESULTS:: 18:59:38: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.15: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.15.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.15
+loaded replay size:  11056
+RESULTS:: 19:10:26: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 19:10:26: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 19:10:26: root                               EvaluationManager.py <_prstr>207 :  Average reward  = -1.18 +- 2.82
+RESULTS:: 19:10:26: root                               EvaluationManager.py <_prstr>207 :  Average success = 16.00 +- 7.27
+RESULTS:: 19:10:26: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 12.58 +- 1.46
+RESULTS:: 19:10:26: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.15->env7-dqn-CH-00.16: iter=15, error-rate=0, num-dialogs=100 ***
+RESULTS:: 19:10:26: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.15->env7-dqn-CH-00.16: iter=15, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.15.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.15
+loaded replay size:  11056
+Saving deepq-network...
+RESULTS:: 19:20:26: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 19:20:26: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 19:20:26: root                               EvaluationManager.py <_prstr>207 :  Average reward  = -1.04 +- 2.69
+RESULTS:: 19:20:26: root                               EvaluationManager.py <_prstr>207 :  Average success = 8.00 +- 5.38
+RESULTS:: 19:20:26: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 10.64 +- 1.21
+*** Evaluating env7-dqn-CH-00.16: error-rate=0 num-dialogs=100 ***
+RESULTS:: 19:20:26: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.16: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.16.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.16
+loaded replay size:  12020
+RESULTS:: 19:29:35: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 19:29:35: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 19:29:35: root                               EvaluationManager.py <_prstr>207 :  Average reward  = -3.78 +- 2.64
+RESULTS:: 19:29:35: root                               EvaluationManager.py <_prstr>207 :  Average success = 13.00 +- 6.67
+RESULTS:: 19:29:35: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 10.38 +- 1.15
+RESULTS:: 19:29:35: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.16->env7-dqn-CH-00.17: iter=16, error-rate=0, num-dialogs=100 ***
+RESULTS:: 19:29:35: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.16->env7-dqn-CH-00.17: iter=16, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.16.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.16
+loaded replay size:  12020
+Saving deepq-network...
+RESULTS:: 19:39:22: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 19:39:22: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 19:39:22: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 0.47 +- 2.26
+RESULTS:: 19:39:22: root                               EvaluationManager.py <_prstr>207 :  Average success = 21.00 +- 8.08
+RESULTS:: 19:39:22: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 9.93 +- 1.13
+*** Evaluating env7-dqn-CH-00.17: error-rate=0 num-dialogs=100 ***
+RESULTS:: 19:39:22: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.17: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.17.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.17
+loaded replay size:  12913
+RESULTS:: 19:47:29: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 19:47:29: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 19:47:29: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 5.60 +- 2.22
+RESULTS:: 19:47:29: root                               EvaluationManager.py <_prstr>207 :  Average success = 26.00 +- 8.70
+RESULTS:: 19:47:29: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.20 +- 0.75
+RESULTS:: 19:47:29: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.17->env7-dqn-CH-00.18: iter=17, error-rate=0, num-dialogs=100 ***
+RESULTS:: 19:47:29: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.17->env7-dqn-CH-00.18: iter=17, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.17.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.17
+loaded replay size:  12913
+Saving deepq-network...
+RESULTS:: 19:57:16: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 19:57:16: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 19:57:16: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 3.79 +- 2.39
+RESULTS:: 19:57:16: root                               EvaluationManager.py <_prstr>207 :  Average success = 23.00 +- 8.35
+RESULTS:: 19:57:16: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 9.41 +- 1.17
+*** Evaluating env7-dqn-CH-00.18: error-rate=0 num-dialogs=100 ***
+RESULTS:: 19:57:16: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.18: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.18.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.18
+loaded replay size:  13754
+RESULTS:: 20:05:21: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 20:05:21: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 20:05:21: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 4.58 +- 2.89
+RESULTS:: 20:05:21: root                               EvaluationManager.py <_prstr>207 :  Average success = 21.00 +- 8.08
+RESULTS:: 20:05:21: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 9.22 +- 1.28
+RESULTS:: 20:05:21: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.18->env7-dqn-CH-00.19: iter=18, error-rate=0, num-dialogs=100 ***
+RESULTS:: 20:05:21: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.18->env7-dqn-CH-00.19: iter=18, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.18.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.18
+loaded replay size:  13754
+Saving deepq-network...
+RESULTS:: 20:14:07: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 20:14:07: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 20:14:07: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 3.68 +- 2.52
+RESULTS:: 20:14:07: root                               EvaluationManager.py <_prstr>207 :  Average success = 18.00 +- 7.62
+RESULTS:: 20:14:07: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 9.32 +- 1.08
+*** Evaluating env7-dqn-CH-00.19: error-rate=0 num-dialogs=100 ***
+RESULTS:: 20:14:07: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.19: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.19.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.19
+loaded replay size:  14586
+RESULTS:: 20:21:44: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 20:21:44: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 20:21:44: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 7.38 +- 2.61
+RESULTS:: 20:21:44: root                               EvaluationManager.py <_prstr>207 :  Average success = 28.00 +- 8.91
+RESULTS:: 20:21:44: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.62 +- 1.16
+RESULTS:: 20:21:44: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.19->env7-dqn-CH-00.20: iter=19, error-rate=0, num-dialogs=100 ***
+RESULTS:: 20:21:44: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.19->env7-dqn-CH-00.20: iter=19, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.19.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.19
+loaded replay size:  14586
+Saving deepq-network...
+RESULTS:: 20:31:07: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 20:31:07: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 20:31:07: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 4.00 +- 2.32
+RESULTS:: 20:31:07: root                               EvaluationManager.py <_prstr>207 :  Average success = 24.00 +- 8.47
+RESULTS:: 20:31:07: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 9.80 +- 1.06
+*** Evaluating env7-dqn-CH-00.20: error-rate=0 num-dialogs=100 ***
+RESULTS:: 20:31:07: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.20: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.20.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.20
+loaded replay size:  15466
+RESULTS:: 20:38:02: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 20:38:02: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 20:38:02: root                               EvaluationManager.py <_prstr>207 :  Average reward  = -1.78 +- 1.91
+RESULTS:: 20:38:02: root                               EvaluationManager.py <_prstr>207 :  Average success = 10.00 +- 5.95
+RESULTS:: 20:38:02: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 6.98 +- 0.53
+RESULTS:: 20:38:02: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.20->env7-dqn-CH-00.21: iter=20, error-rate=0, num-dialogs=100 ***
+RESULTS:: 20:38:02: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.20->env7-dqn-CH-00.21: iter=20, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.20.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.20
+loaded replay size:  15466
+Saving deepq-network...
+RESULTS:: 20:47:46: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 20:47:46: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 20:47:46: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 2.78 +- 2.41
+RESULTS:: 20:47:46: root                               EvaluationManager.py <_prstr>207 :  Average success = 13.00 +- 6.67
+RESULTS:: 20:47:46: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 10.02 +- 1.04
+*** Evaluating env7-dqn-CH-00.21: error-rate=0 num-dialogs=100 ***
+RESULTS:: 20:47:46: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.21: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.21.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.21
+loaded replay size:  16368
+RESULTS:: 20:55:28: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 20:55:28: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 20:55:28: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 7.31 +- 1.90
+RESULTS:: 20:55:28: root                               EvaluationManager.py <_prstr>207 :  Average success = 20.00 +- 7.94
+RESULTS:: 20:55:28: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.09 +- 0.65
+RESULTS:: 20:55:28: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.21->env7-dqn-CH-00.22: iter=21, error-rate=0, num-dialogs=100 ***
+RESULTS:: 20:55:28: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.21->env7-dqn-CH-00.22: iter=21, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.21.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.21
+loaded replay size:  16368
+Saving deepq-network...
+RESULTS:: 21:04:59: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 21:04:59: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 21:04:59: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 4.86 +- 2.31
+RESULTS:: 21:04:59: root                               EvaluationManager.py <_prstr>207 :  Average success = 18.00 +- 7.62
+RESULTS:: 21:04:59: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 9.74 +- 1.04
+*** Evaluating env7-dqn-CH-00.22: error-rate=0 num-dialogs=100 ***
+RESULTS:: 21:04:59: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.22: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.22.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.22
+loaded replay size:  17242
+RESULTS:: 21:12:50: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 21:12:50: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 21:12:50: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 9.45 +- 1.67
+RESULTS:: 21:12:50: root                               EvaluationManager.py <_prstr>207 :  Average success = 28.00 +- 8.91
+RESULTS:: 21:12:50: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.55 +- 0.99
+RESULTS:: 21:12:50: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.22->env7-dqn-CH-00.23: iter=22, error-rate=0, num-dialogs=100 ***
+RESULTS:: 21:12:50: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.22->env7-dqn-CH-00.23: iter=22, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.22.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.22
+loaded replay size:  17242
+Saving deepq-network...
+RESULTS:: 21:22:28: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 21:22:28: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 21:22:28: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 4.83 +- 2.29
+RESULTS:: 21:22:28: root                               EvaluationManager.py <_prstr>207 :  Average success = 20.00 +- 7.94
+RESULTS:: 21:22:28: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 9.77 +- 1.09
+*** Evaluating env7-dqn-CH-00.23: error-rate=0 num-dialogs=100 ***
+RESULTS:: 21:22:28: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.23: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.23.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.23
+loaded replay size:  18119
+RESULTS:: 21:30:09: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 21:30:09: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 21:30:09: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 6.66 +- 2.47
+RESULTS:: 21:30:09: root                               EvaluationManager.py <_prstr>207 :  Average success = 17.00 +- 7.45
+RESULTS:: 21:30:09: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.34 +- 1.02
+RESULTS:: 21:30:09: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.23->env7-dqn-CH-00.24: iter=23, error-rate=0, num-dialogs=100 ***
+RESULTS:: 21:30:09: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.23->env7-dqn-CH-00.24: iter=23, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.23.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.23
+loaded replay size:  18119
+Saving deepq-network...
+RESULTS:: 21:39:37: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 21:39:37: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 21:39:37: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 3.04 +- 2.73
+RESULTS:: 21:39:37: root                               EvaluationManager.py <_prstr>207 :  Average success = 19.00 +- 7.78
+RESULTS:: 21:39:37: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 9.96 +- 1.25
+*** Evaluating env7-dqn-CH-00.24: error-rate=0 num-dialogs=100 ***
+RESULTS:: 21:39:37: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.24: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.24.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.24
+loaded replay size:  19015
+RESULTS:: 21:47:47: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 21:47:47: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 21:47:47: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 6.45 +- 2.58
+RESULTS:: 21:47:47: root                               EvaluationManager.py <_prstr>207 :  Average success = 19.00 +- 7.78
+RESULTS:: 21:47:47: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.95 +- 1.11
+RESULTS:: 21:47:47: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.24->env7-dqn-CH-00.25: iter=24, error-rate=0, num-dialogs=100 ***
+RESULTS:: 21:47:47: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.24->env7-dqn-CH-00.25: iter=24, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.24.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.24
+loaded replay size:  19015
+Saving deepq-network...
+RESULTS:: 21:57:06: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 21:57:06: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 21:57:06: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 7.01 +- 1.99
+RESULTS:: 21:57:06: root                               EvaluationManager.py <_prstr>207 :  Average success = 27.00 +- 8.81
+RESULTS:: 21:57:06: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.99 +- 0.95
+*** Evaluating env7-dqn-CH-00.25: error-rate=0 num-dialogs=100 ***
+RESULTS:: 21:57:06: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.25: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.25.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.25
+loaded replay size:  19814
+RESULTS:: 22:04:24: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 22:04:24: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 22:04:24: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 4.81 +- 2.06
+RESULTS:: 22:04:25: root                               EvaluationManager.py <_prstr>207 :  Average success = 19.00 +- 7.78
+RESULTS:: 22:04:25: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 7.59 +- 0.44
+RESULTS:: 22:04:25: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.25->env7-dqn-CH-00.26: iter=25, error-rate=0, num-dialogs=100 ***
+RESULTS:: 22:04:25: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.25->env7-dqn-CH-00.26: iter=25, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.25.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.25
+loaded replay size:  19814
+Saving deepq-network...
+RESULTS:: 22:14:00: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 22:14:00: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 22:14:00: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 5.27 +- 2.31
+RESULTS:: 22:14:00: root                               EvaluationManager.py <_prstr>207 :  Average success = 18.00 +- 7.62
+RESULTS:: 22:14:00: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.93 +- 1.02
+*** Evaluating env7-dqn-CH-00.26: error-rate=0 num-dialogs=100 ***
+RESULTS:: 22:14:00: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.26: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.26.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.26
+loaded replay size:  20607
+RESULTS:: 22:21:14: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 22:21:14: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 22:21:14: root                               EvaluationManager.py <_prstr>207 :  Average reward  = -1.63 +- 2.18
+RESULTS:: 22:21:14: root                               EvaluationManager.py <_prstr>207 :  Average success = 6.00 +- 4.71
+RESULTS:: 22:21:14: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 7.43 +- 0.84
+RESULTS:: 22:21:14: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.26->env7-dqn-CH-00.27: iter=26, error-rate=0, num-dialogs=100 ***
+RESULTS:: 22:21:14: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.26->env7-dqn-CH-00.27: iter=26, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.26.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.26
+loaded replay size:  20607
+Saving deepq-network...
+RESULTS:: 22:29:50: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 22:29:50: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 22:29:50: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 4.59 +- 2.49
+RESULTS:: 22:29:50: root                               EvaluationManager.py <_prstr>207 :  Average success = 25.00 +- 8.59
+RESULTS:: 22:29:50: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 9.81 +- 1.12
+*** Evaluating env7-dqn-CH-00.27: error-rate=0 num-dialogs=100 ***
+RESULTS:: 22:29:50: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.27: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.27.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.27
+loaded replay size:  21488
+RESULTS:: 22:36:43: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 22:36:43: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 22:36:43: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 11.46 +- 1.43
+RESULTS:: 22:36:43: root                               EvaluationManager.py <_prstr>207 :  Average success = 26.00 +- 8.70
+RESULTS:: 22:36:43: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 7.74 +- 0.88
+RESULTS:: 22:36:43: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.27->env7-dqn-CH-00.28: iter=27, error-rate=0, num-dialogs=100 ***
+RESULTS:: 22:36:43: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.27->env7-dqn-CH-00.28: iter=27, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.27.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.27
+loaded replay size:  21488
+Saving deepq-network...
+RESULTS:: 22:45:36: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 22:45:36: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 22:45:36: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 5.55 +- 2.38
+RESULTS:: 22:45:36: root                               EvaluationManager.py <_prstr>207 :  Average success = 22.00 +- 8.22
+RESULTS:: 22:45:36: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 10.05 +- 1.21
+*** Evaluating env7-dqn-CH-00.28: error-rate=0 num-dialogs=100 ***
+RESULTS:: 22:45:36: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.28: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.28.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.28
+loaded replay size:  22393
+RESULTS:: 22:52:46: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 22:52:46: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 22:52:46: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 8.08 +- 1.85
+RESULTS:: 22:52:46: root                               EvaluationManager.py <_prstr>207 :  Average success = 34.00 +- 9.40
+RESULTS:: 22:52:46: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.12 +- 0.77
+RESULTS:: 22:52:46: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.28->env7-dqn-CH-00.29: iter=28, error-rate=0, num-dialogs=100 ***
+RESULTS:: 22:52:46: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.28->env7-dqn-CH-00.29: iter=28, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.28.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.28
+loaded replay size:  22393
+Saving deepq-network...
+RESULTS:: 23:01:04: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 23:01:04: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 23:01:04: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 5.47 +- 2.14
+RESULTS:: 23:01:04: root                               EvaluationManager.py <_prstr>207 :  Average success = 22.00 +- 8.22
+RESULTS:: 23:01:04: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.73 +- 0.97
+*** Evaluating env7-dqn-CH-00.29: error-rate=0 num-dialogs=100 ***
+RESULTS:: 23:01:04: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.29: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.29.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.29
+loaded replay size:  23166
+RESULTS:: 23:08:06: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 23:08:06: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 23:08:06: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 8.78 +- 1.86
+RESULTS:: 23:08:06: root                               EvaluationManager.py <_prstr>207 :  Average success = 29.00 +- 9.00
+RESULTS:: 23:08:06: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.02 +- 0.82
+RESULTS:: 23:08:06: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.29->env7-dqn-CH-00.30: iter=29, error-rate=0, num-dialogs=100 ***
+RESULTS:: 23:08:06: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.29->env7-dqn-CH-00.30: iter=29, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.29.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.29
+loaded replay size:  23166
+Saving deepq-network...
+RESULTS:: 23:16:20: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 23:16:20: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 23:16:20: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 8.18 +- 1.91
+RESULTS:: 23:16:20: root                               EvaluationManager.py <_prstr>207 :  Average success = 25.00 +- 8.59
+RESULTS:: 23:16:20: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.42 +- 0.98
+*** Evaluating env7-dqn-CH-00.30: error-rate=0 num-dialogs=100 ***
+RESULTS:: 23:16:20: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.30: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.30.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.30
+loaded replay size:  23908
+RESULTS:: 23:23:02: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 23:23:02: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 23:23:02: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 9.82 +- 1.56
+RESULTS:: 23:23:02: root                               EvaluationManager.py <_prstr>207 :  Average success = 26.00 +- 8.70
+RESULTS:: 23:23:02: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 7.18 +- 0.50
+RESULTS:: 23:23:02: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.30->env7-dqn-CH-00.31: iter=30, error-rate=0, num-dialogs=100 ***
+RESULTS:: 23:23:02: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.30->env7-dqn-CH-00.31: iter=30, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.30.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.30
+loaded replay size:  23908
+Saving deepq-network...
+RESULTS:: 23:30:50: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 23:30:50: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 23:30:50: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 7.45 +- 1.85
+RESULTS:: 23:30:50: root                               EvaluationManager.py <_prstr>207 :  Average success = 23.00 +- 8.35
+RESULTS:: 23:30:50: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 7.55 +- 0.75
+*** Evaluating env7-dqn-CH-00.31: error-rate=0 num-dialogs=100 ***
+RESULTS:: 23:30:50: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.31: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.31.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.31
+loaded replay size:  24563
+RESULTS:: 23:37:20: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 23:37:20: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 23:37:20: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 10.72 +- 1.37
+RESULTS:: 23:37:20: root                               EvaluationManager.py <_prstr>207 :  Average success = 28.00 +- 8.91
+RESULTS:: 23:37:20: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 7.08 +- 0.49
+RESULTS:: 23:37:20: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.31->env7-dqn-CH-00.32: iter=31, error-rate=0, num-dialogs=100 ***
+RESULTS:: 23:37:20: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.31->env7-dqn-CH-00.32: iter=31, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.31.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.31
+loaded replay size:  24563
+Saving deepq-network...
+RESULTS:: 23:44:52: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 23:44:52: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 23:44:52: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 7.22 +- 1.97
+RESULTS:: 23:44:52: root                               EvaluationManager.py <_prstr>207 :  Average success = 18.00 +- 7.62
+RESULTS:: 23:44:52: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.78 +- 0.91
+*** Evaluating env7-dqn-CH-00.32: error-rate=0 num-dialogs=100 ***
+RESULTS:: 23:44:52: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.32: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.32.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.32
+loaded replay size:  25341
+RESULTS:: 23:50:42: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 23:50:42: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 23:50:42: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 9.38 +- 1.81
+RESULTS:: 23:50:42: root                               EvaluationManager.py <_prstr>207 :  Average success = 23.00 +- 8.35
+RESULTS:: 23:50:42: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 6.82 +- 0.51
+RESULTS:: 23:50:42: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.32->env7-dqn-CH-00.33: iter=32, error-rate=0, num-dialogs=100 ***
+RESULTS:: 23:50:42: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.32->env7-dqn-CH-00.33: iter=32, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.32.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.32
+loaded replay size:  25341
+Saving deepq-network...
+RESULTS:: 23:58:05: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 23:58:05: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 23:58:05: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 6.59 +- 1.85
+RESULTS:: 23:58:05: root                               EvaluationManager.py <_prstr>207 :  Average success = 21.00 +- 8.08
+RESULTS:: 23:58:05: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.41 +- 0.88
+*** Evaluating env7-dqn-CH-00.33: error-rate=0 num-dialogs=100 ***
+RESULTS:: 23:58:05: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.33: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.33.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.33
+loaded replay size:  26082
+RESULTS:: 00:04:25: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 00:04:25: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 00:04:25: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 9.10 +- 1.64
+RESULTS:: 00:04:25: root                               EvaluationManager.py <_prstr>207 :  Average success = 23.00 +- 8.35
+RESULTS:: 00:04:25: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 7.90 +- 0.64
+RESULTS:: 00:04:25: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.33->env7-dqn-CH-00.34: iter=33, error-rate=0, num-dialogs=100 ***
+RESULTS:: 00:04:25: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.33->env7-dqn-CH-00.34: iter=33, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.33.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.33
+loaded replay size:  26082
+Saving deepq-network...
+RESULTS:: 00:12:02: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 00:12:02: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 00:12:02: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 6.51 +- 2.28
+RESULTS:: 00:12:02: root                               EvaluationManager.py <_prstr>207 :  Average success = 19.00 +- 7.78
+RESULTS:: 00:12:02: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.89 +- 1.12
+*** Evaluating env7-dqn-CH-00.34: error-rate=0 num-dialogs=100 ***
+RESULTS:: 00:12:02: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.34: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.34.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.34
+loaded replay size:  26871
+RESULTS:: 00:19:03: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 00:19:03: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 00:19:03: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 9.65 +- 1.70
+RESULTS:: 00:19:03: root                               EvaluationManager.py <_prstr>207 :  Average success = 22.00 +- 8.22
+RESULTS:: 00:19:03: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.95 +- 1.00
+RESULTS:: 00:19:03: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.34->env7-dqn-CH-00.35: iter=34, error-rate=0, num-dialogs=100 ***
+RESULTS:: 00:19:03: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.34->env7-dqn-CH-00.35: iter=34, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.34.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.34
+loaded replay size:  26871
+Saving deepq-network...
+RESULTS:: 00:27:03: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 00:27:03: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 00:27:03: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 5.48 +- 2.21
+RESULTS:: 00:27:03: root                               EvaluationManager.py <_prstr>207 :  Average success = 20.00 +- 7.94
+RESULTS:: 00:27:03: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 9.32 +- 0.98
+*** Evaluating env7-dqn-CH-00.35: error-rate=0 num-dialogs=100 ***
+RESULTS:: 00:27:03: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.35: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.35.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.35
+loaded replay size:  27703
+RESULTS:: 00:33:24: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 00:33:24: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 00:33:24: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 9.74 +- 1.82
+RESULTS:: 00:33:24: root                               EvaluationManager.py <_prstr>207 :  Average success = 28.00 +- 8.91
+RESULTS:: 00:33:24: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 7.46 +- 0.69
+RESULTS:: 00:33:24: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.35->env7-dqn-CH-00.36: iter=35, error-rate=0, num-dialogs=100 ***
+RESULTS:: 00:33:24: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.35->env7-dqn-CH-00.36: iter=35, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.35.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.35
+loaded replay size:  27703
+Saving deepq-network...
+RESULTS:: 00:41:07: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 00:41:07: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 00:41:07: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 5.66 +- 2.22
+RESULTS:: 00:41:07: root                               EvaluationManager.py <_prstr>207 :  Average success = 16.00 +- 7.27
+RESULTS:: 00:41:07: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.94 +- 0.94
+*** Evaluating env7-dqn-CH-00.36: error-rate=0 num-dialogs=100 ***
+RESULTS:: 00:41:07: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.36: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.36.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.36
+loaded replay size:  28497
+RESULTS:: 00:47:16: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 00:47:16: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 00:47:16: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 3.82 +- 2.27
+RESULTS:: 00:47:16: root                               EvaluationManager.py <_prstr>207 :  Average success = 11.00 +- 6.21
+RESULTS:: 00:47:16: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 7.18 +- 0.71
+RESULTS:: 00:47:16: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.36->env7-dqn-CH-00.37: iter=36, error-rate=0, num-dialogs=100 ***
+RESULTS:: 00:47:16: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.36->env7-dqn-CH-00.37: iter=36, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.36.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.36
+loaded replay size:  28497
+Saving deepq-network...
+RESULTS:: 00:55:17: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 00:55:17: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 00:55:17: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 5.79 +- 2.20
+RESULTS:: 00:55:17: root                               EvaluationManager.py <_prstr>207 :  Average success = 20.00 +- 7.94
+RESULTS:: 00:55:17: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 9.21 +- 1.03
+*** Evaluating env7-dqn-CH-00.37: error-rate=0 num-dialogs=100 ***
+RESULTS:: 00:55:17: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.37: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.37.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.37
+loaded replay size:  29318
+RESULTS:: 01:01:49: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 01:01:49: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 01:01:49: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 10.23 +- 1.57
+RESULTS:: 01:01:49: root                               EvaluationManager.py <_prstr>207 :  Average success = 20.00 +- 7.94
+RESULTS:: 01:01:49: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 7.17 +- 0.51
+RESULTS:: 01:01:49: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.37->env7-dqn-CH-00.38: iter=37, error-rate=0, num-dialogs=100 ***
+RESULTS:: 01:01:49: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.37->env7-dqn-CH-00.38: iter=37, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.37.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.37
+loaded replay size:  29318
+Saving deepq-network...
+RESULTS:: 01:09:45: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 01:09:45: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 01:09:45: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 8.08 +- 1.82
+RESULTS:: 01:09:45: root                               EvaluationManager.py <_prstr>207 :  Average success = 28.00 +- 8.91
+RESULTS:: 01:09:45: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.52 +- 0.80
+*** Evaluating env7-dqn-CH-00.38: error-rate=0 num-dialogs=100 ***
+RESULTS:: 01:09:45: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.38: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.38.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.38
+loaded replay size:  30070
+RESULTS:: 01:16:56: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 01:16:56: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 01:16:56: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 11.23 +- 1.03
+RESULTS:: 01:16:56: root                               EvaluationManager.py <_prstr>207 :  Average success = 23.00 +- 8.35
+RESULTS:: 01:16:56: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.37 +- 0.86
+RESULTS:: 01:16:56: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.38->env7-dqn-CH-00.39: iter=38, error-rate=0, num-dialogs=100 ***
+RESULTS:: 01:16:56: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.38->env7-dqn-CH-00.39: iter=38, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.38.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.38
+loaded replay size:  30070
+Saving deepq-network...
+RESULTS:: 01:23:31: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 01:23:31: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 01:23:31: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 7.03 +- 2.02
+RESULTS:: 01:23:31: root                               EvaluationManager.py <_prstr>207 :  Average success = 20.00 +- 7.94
+RESULTS:: 01:23:31: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 9.17 +- 0.99
+*** Evaluating env7-dqn-CH-00.39: error-rate=0 num-dialogs=100 ***
+RESULTS:: 01:23:31: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.39: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.39.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.39
+loaded replay size:  30887
+RESULTS:: 01:28:31: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 01:28:31: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 01:28:31: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 9.23 +- 2.23
+RESULTS:: 01:28:31: root                               EvaluationManager.py <_prstr>207 :  Average success = 19.00 +- 7.78
+RESULTS:: 01:28:31: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 8.17 +- 1.06
+RESULTS:: 01:28:31: root                                   pydial.py <train_command>851 :  List of domains: CamHotels
+*** Training Iteration env7-dqn-CH-00.39->env7-dqn-CH-00.40: iter=39, error-rate=0, num-dialogs=100 ***
+RESULTS:: 01:28:31: root                                      pydial.py <trainBatch>429 :  *** Training Iteration env7-dqn-CH-00.39->env7-dqn-CH-00.40: iter=39, error-rate=0, num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.39.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.39
+loaded replay size:  30887
+Saving deepq-network...
+RESULTS:: 01:34:07: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 01:34:07: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 01:34:07: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 7.12 +- 2.06
+RESULTS:: 01:34:07: root                               EvaluationManager.py <_prstr>207 :  Average success = 20.00 +- 7.94
+RESULTS:: 01:34:07: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 9.68 +- 1.05
+*** Evaluating env7-dqn-CH-00.40: error-rate=0 num-dialogs=100 ***
+RESULTS:: 01:34:07: root                                   pydial.py <setEvalConfig>490 :  *** Evaluating env7-dqn-CH-00.40: error-rate=0 num-dialogs=100 ***
+Successfully loaded: _benchmarkpolicies/env7-dqn-CH-00.40.dqn.ckpt
+load from:  _benchmarkpolicies/env7-dqn-CH-00.40
+loaded replay size:  31755
+RESULTS:: 01:37:50: root                               EvaluationManager.py <_prstr>207 :  Results for domain: CamHotels --evaluated by: objective success evaluator
+RESULTS:: 01:37:50: root                               EvaluationManager.py <_prstr>207 :  # of dialogues  = 100
+RESULTS:: 01:37:50: root                               EvaluationManager.py <_prstr>207 :  Average reward  = 13.16 +- 0.83
+RESULTS:: 01:37:50: root                               EvaluationManager.py <_prstr>207 :  Average success = 30.00 +- 9.09
+RESULTS:: 01:37:50: root                               EvaluationManager.py <_prstr>207 :  Average turns   = 6.44 +- 0.48
+RESULTS:: 01:37:50: root                                   pydial.py <train_command>867 :  *** Training complete. log: env7-dqn-CH-seed7051994-00.1-40.train.log - final policy is env7-dqn-CH-00-40
